@@ -1,8 +1,7 @@
 {
     "id": "org.ekstep.animation",
     "ver": "1.0",
-    "author": "",
-    "type": "widget",
+    "author": "HarishKumar Gangula",
     "title": "org.ekstep.animation Plugin",
     "description": "",
     "publishedDate": "",
@@ -15,21 +14,22 @@
                 "ver": "1.0"
             }
         ],
-        "menu": [],
+        "menu": [{
+            "id": "org.ekstep.animation",
+            "category": "main",
+            "type": "icon",
+            "toolTip": "Add animation",
+            "title": "Text",
+            "iconClass": "skyatlas icon",
+            "onclick": {
+                "id": "org.ekstep.animation:create",
+                "data": {}
+            }
+        }
+        ],
         "help": {
             "src": "editor/help.md",
             "dataType": "text"
-        },
-        "init-data": {
-            "type": "circle",
-            "radius": 90,
-            "strokeWidth": 10,
-            "x": 10,
-            "y": 10,
-            "w": 10,
-            "h": 10,
-            "fill": "",
-            "stroke": "rgba(0,192,255,0.5)"
         }
     },
     "renderer": {
